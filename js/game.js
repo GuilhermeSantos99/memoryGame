@@ -34,7 +34,6 @@ const checkEndGame = () => {
 
 }
 
-
 const checkCards = () => {
 
   const firstCharacter = firstCard.getAttribute('data-character');
@@ -108,7 +107,7 @@ const loadGame = () => {
 
 const duplicateCharacter = [ ...characters, ...characters ];
 
-const suffledArray = duplicateCharacter.sort( () => Math.random() - 0,5 );
+const suffledArray = duplicateCharacter.sort( () => Math.random() - 0.5 );
   
 suffledArray.forEach((character) => {
     const card = createCard(character);
